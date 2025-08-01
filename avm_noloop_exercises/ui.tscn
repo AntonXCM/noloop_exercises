@@ -1,0 +1,118 @@
+[gd_scene load_steps=10 format=3 uid="uid://d1bsgsasxc8yl"]
+
+[ext_resource type="Texture2D" uid="uid://j8buu3bbe8y6" path="res://bounds.png" id="1_ok7cu"]
+[ext_resource type="Theme" uid="uid://ded1ooo8os7sq" path="res://AlegreyaTheme.tres" id="2_irxef"]
+[ext_resource type="Script" uid="uid://bv6po11n2odm1" path="res://Scripts/FramerateManager.cs" id="3_e2l4f"]
+[ext_resource type="FontFile" uid="uid://j2dxqqd65sgn" path="res://AlegreyaSans-BoldItalic.ttf" id="4_n5rqp"]
+[ext_resource type="PackedScene" uid="uid://42tgnvycceak" path="res://code Column.tscn" id="5_gs482"]
+[ext_resource type="Theme" uid="uid://c7ajlfuioc4gb" path="res://CodeTheme.tres" id="6_cxd00"]
+[ext_resource type="Script" uid="uid://b512ejks5k7hw" path="res://Scripts/Level/Level.cs" id="7_etlur"]
+[ext_resource type="Script" uid="uid://m207vnkmpwtx" path="res://Levels/dummy.gd" id="8_7rqds"]
+[ext_resource type="Script" uid="uid://dxubvxwpwkncd" path="res://Scripts/LoadScriptButton.cs" id="9_nvb2n"]
+
+[node name="UI" type="Node"]
+
+[node name="Bounds" type="Sprite2D" parent="."]
+position = Vector2(576, 424)
+scale = Vector2(1.46683, 0.590377)
+texture = ExtResource("1_ok7cu")
+
+[node name="FPS Label" type="RichTextLabel" parent="."]
+offset_left = 6.0
+offset_top = 6.0
+offset_right = 1142.0
+offset_bottom = 78.0
+theme = ExtResource("2_irxef")
+text = "Fps=24"
+script = ExtResource("3_e2l4f")
+
+[node name="Level Label" type="RichTextLabel" parent="."]
+offset_left = 319.0
+offset_top = 134.0
+offset_right = 817.0
+offset_bottom = 178.0
+focus_mode = 2
+theme = ExtResource("2_irxef")
+theme_override_fonts/normal_font = ExtResource("4_n5rqp")
+theme_override_font_sizes/normal_font_size = 43
+text = "Level Label bro"
+horizontal_alignment = 1
+selection_enabled = true
+
+[node name="Level Code" parent="." instance=ExtResource("5_gs482")]
+offset_left = 7.99962
+offset_top = 149.0
+offset_right = 7.99962
+offset_bottom = 149.0
+
+[node name="User Code" parent="." instance=ExtResource("5_gs482")]
+offset_left = 583.0
+offset_top = 156.0
+offset_right = 583.0
+offset_bottom = 156.0
+
+[node name="Submit Button" type="Button" parent="." node_paths=PackedStringArray("levelCode", "userCode", "label", "fileDialog")]
+offset_left = 7.99859
+offset_top = 558.0
+offset_right = 568.999
+offset_bottom = 632.0
+theme = ExtResource("6_cxd00")
+theme_override_font_sizes/font_size = 20
+text = "Submit"
+script = ExtResource("7_etlur")
+dummyScript = ExtResource("8_7rqds")
+levelCode = NodePath("../Level Code")
+userCode = NodePath("../User Code")
+label = NodePath("../Level Label")
+levelCodePath = "res://Levels/level_"
+userCodePath = "my solution to level "
+badColor = Color(1, 0, 0, 1)
+okColor = Color(1, 0.730144, 0.45088, 1)
+goodColor = Color(9.62615e-07, 0.903447, 0.400778, 1)
+fileDialog = NodePath("Save Dialog")
+
+[node name="Confirm Dialog" type="AcceptDialog" parent="Submit Button"]
+auto_translate_mode = 1
+title = "SAVE"
+initial_position = 2
+size = Vector2i(240, 182)
+force_native = true
+dialog_text = "Hey! To compile code you
+need to save it on drive"
+dialog_autowrap = true
+
+[node name="Save Dialog" type="FileDialog" parent="Submit Button"]
+auto_translate_mode = 1
+title = "Open a Directory"
+initial_position = 2
+transient = false
+always_on_top = true
+force_native = true
+ok_button_text = "Select Current Folder"
+dialog_close_on_escape = false
+file_mode = 2
+access = 2
+show_hidden_files = true
+use_native_dialog = true
+
+[node name="Load Script Button" type="Button" parent="." node_paths=PackedStringArray("dialog", "level")]
+offset_left = 583.0
+offset_top = 557.0
+offset_right = 1136.0
+offset_bottom = 631.0
+theme = ExtResource("6_cxd00")
+theme_override_font_sizes/font_size = 20
+text = "Load script file"
+script = ExtResource("9_nvb2n")
+dialog = NodePath("Load Dialog")
+level = NodePath("../Submit Button")
+
+[node name="Load Dialog" type="FileDialog" parent="Load Script Button"]
+auto_translate_mode = 1
+title = "Open a File"
+initial_position = 2
+ok_button_text = "Open"
+file_mode = 0
+access = 2
+show_hidden_files = true
+use_native_dialog = true

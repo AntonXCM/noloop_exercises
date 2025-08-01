@@ -3,9 +3,15 @@ res://AlegreyaTheme.tres
 res://code Column.tscn
 res://LikeGame.tscn
 res://borshevik.tscn
+res://Scripts/Level/Level.cs
 res://Scripts/CodeColumn.cs
 res://Scripts/LoadScriptButton.cs
 res://Scripts/Game.cs
-res://Scripts/Level/Level.cs
 res://Scripts/FramerateManager.cs
-res://Levels/dummy.gd
+res://Pixel.tres
+res://Scripts/Dialog.cs
+res://Scripts/Util/UnsafeMath.cs
+res://Scripts/Dialog/Scenario.cs
+res://Scripts/Dialog/Dialog.cs
+res://Scripts/Dialog/SkipButton.cs
+res://Scripts/Dialog/Replica.cs

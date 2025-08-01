@@ -1,43 +1,57 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1754043675
+::res://::1754067382
 AlegreyaSans-BoldItalic.ttf::FontFile/FontFile::687661881609423201::1753952495::1753952496::1::::<><><>0<>0<>54ab8cbdebe47a6ef620451ef0845288<>res://.godot/imported/AlegreyaSans-BoldItalic.ttf-5ef960b23ff7f39d71115d27fde94b4a.fontdata::
 AlegreyaSans-Light.ttf::FontFile/FontFile::340904050095847380::1753952328::1753952329::1::::<><><>0<>0<>f33bed326b250ec9e3e7a3d5b847e5a4<>res://.godot/imported/AlegreyaSans-Light.ttf-78f1e8b1e5077fe4b837c8de25ffab08.fontdata::
-AlegreyaTheme.tres::Theme::7447814960293195268::1754027236::0::1::::<><><>0<>0<><>::uid://e4ev0yth6i4s::::res://AlegreyaSans-Light.ttf
+AlegreyaTheme.tres::Theme/Theme::7447814960293195268::1754048470::0::1::::<><><>0<>0<><>::uid://e4ev0yth6i4s::::res://AlegreyaSans-Light.ttf
 ambulance.png::CompressedTexture2D/CompressedTexture2D::629935311292092292::1754037258::1754037310::1::::<><><>0<>0<>671cbf787c5b50228ef020e71c340919<>res://.godot/imported/ambulance.png-196a5880851749dd43668782b26b25a5.ctex::
-antivirusman.png::CompressedTexture2D/CompressedTexture2D::3019026867838022339::1753944441::1753944919::1::::<><><>0<>0<>e8f07d9d1876bf7ad9b71d96a3019d7c<>res://.godot/imported/antivirusman.png-52cfc4848844dc18c7416aa0aeaa368e.ctex::
+antivirusman.png::CompressedTexture2D/CompressedTexture2D::3019026867838022339::1754052667::1754052672::1::::<><><>0<>0<>e8f07d9d1876bf7ad9b71d96a3019d7c<>res://.godot/imported/antivirusman.png-52cfc4848844dc18c7416aa0aeaa368e.ctex::
+AVM mono 5x6.ttf::FontFile/FontFile::3637131136763761258::1754053782::1754053801::1::::<><><>0<>0<>5d582fc2fdbbbcb68703f54855796e11<>res://.godot/imported/AVM mono 5x6.ttf-ee38c28fefdeb8f7ce884b44da5c3a08.fontdata::
 blocker.png::CompressedTexture2D/CompressedTexture2D::752287670786763349::1754037258::1754037318::1::::<><><>0<>0<>0dbae97f8a8e8bfbbd3893e032798d2a<>res://.godot/imported/blocker.png-a7c6a2db5443d32b3d84520db58bafa6.ctex::
-booka.png::CompressedTexture2D/CompressedTexture2D::6418678156985037224::1754035989::1754036084::1::::<><><>0<>0<>5d8b41e56d6a0bbabd5c8df601941fd1<>res://.godot/imported/booka.png-16bd99194611ec2d073788233c565146.ctex::
+booka.png::CompressedTexture2D/CompressedTexture2D::6418678156985037224::1754066376::1754066379::1::::<><><>0<>0<>5d8b41e56d6a0bbabd5c8df601941fd1<>res://.godot/imported/booka.png-16bd99194611ec2d073788233c565146.ctex::
 borshevik.png::CompressedTexture2D/CompressedTexture2D::1203414233641317788::1753964538::1753964541::1::::<><><>0<>0<>ce41059e22a1d32fe745123e724eebb2<>res://.godot/imported/borshevik.png-610998e1075b6e5d47476b5ad0ae9bd5.ctex::
-borshevik.tscn::PackedScene::4981137456496635009::1754034863::0::1::::<><><>0<>0<><>::uid://re7b6o5bo1wi::::res://borshevik.png
+borshevik.tscn::PackedScene/PackedScene::4981137456496635009::1754066149::0::1::::<><><>0<>0<><>::uid://re7b6o5bo1wi::::res://borshevik.png
 bounds.png::CompressedTexture2D/CompressedTexture2D::699921585265622947::1753963790::1753963791::1::::<><><>0<>0<>69e7f23dc2c0071fc353d88a48259f5c<>res://.godot/imported/bounds.png-c47f601f75d0147ffdf2b62cb0ae3fae.ctex::
-code Column.tscn::PackedScene::2092379718826195978::1754034863::0::1::::<><><>0<>0<><>::uid://drtk6ldmbtof5::::res://Scripts/CodeColumn.cs<>uid://ded1ooo8os7sq::::res://AlegreyaTheme.tres<>uid://c7ajlfuioc4gb::::res://CodeTheme.tres<>uid://dcpo1mk6tynei::::res://FiraCodeLight.tres
+code Column.tscn::PackedScene/PackedScene::2092379718826195978::1754066148::0::1::::<><><>0<>0<><>::uid://drtk6ldmbtof5::::res://Scripts/CodeColumn.cs<>uid://ded1ooo8os7sq::::res://AlegreyaTheme.tres<>uid://c7ajlfuioc4gb::::res://CodeTheme.tres<>uid://dcpo1mk6tynei::::res://FiraCodeLight.tres
 CodeTheme.tres::Theme/Theme::7019450754366233905::1753962352::0::1::::<><><>0<>0<><>::uid://c55ibp6ejmnyq::::res://FiraCode-Retina.ttf
+dialogPopup.png::CompressedTexture2D/CompressedTexture2D::7901195878127331817::1754053099::1754053102::1::::<><><>0<>0<>7a1fb9196cb849e88579ffaeb59f42cd<>res://.godot/imported/dialogPopup.png-e84b92700ad0360d6468de7820e1de56.ctex::
 FiraCode-Light.ttf::FontFile/FontFile::5364551295493523150::1753955529::1753955529::1::::<><><>0<>0<>d79f0c4e7ea5d195556459481a1e41d8<>res://.godot/imported/FiraCode-Light.ttf-9add2e281d233da5c0a8617077503343.fontdata::
 FiraCode-Retina.ttf::FontFile/FontFile::6940926366818448804::1753951301::1753951305::1::::<><><>0<>0<>69b2ba8801e25a73860cb82ec4f7d4e7<>res://.godot/imported/FiraCode-Retina.ttf-3ae7c3a42d65ec56860d202d50c7246a.fontdata::
 FiraCodeLight.tres::Theme/Theme::7331502520369615252::1753955639::0::1::::<><><>0<>0<><>::uid://ciovm1y5tkm0m::::res://FiraCode-Light.ttf
 goo.png::CompressedTexture2D/CompressedTexture2D::5005885917690060632::1754037258::1754037304::1::::<><><>0<>0<>de6335e1437b5ee6e3f85a472e27b60c<>res://.godot/imported/goo.png-c3f8b129f4d36a58b824762d18f7e82d.ctex::
 grassRound.png::CompressedTexture2D/CompressedTexture2D::654862490605346804::1753963575::1753963578::1::::<><><>0<>0<>ee7e99abdbcb7cd49f7fcda18cf41806<>res://.godot/imported/grassRound.png-58900e1d5ed494e7d3f4cebbc024fcd0.ctex::
 icon.svg::CompressedTexture2D/CompressedTexture2D::4999413846563336231::1753938873::1753938883::1::::<><><>0<>0<>cc415010e375dc18628c79f083726d2a<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-LikeGame.tscn::PackedScene::5881991002547270922::1754034863::0::1::::<><><>0<>0<><>::uid://jlhqv6a25dtc::::res://grassRound.png<>uid://knubq6angj30::::res://Scripts/Game.cs<>uid://deubxfo3smsy4::::res://sky.png<>uid://cc75uuyla7gh2::::res://borshevik.tscn
-scene.tscn::PackedScene::4756419114246952993::1754036128::0::1::::<><><>0<>0<><>::uid://ded1ooo8os7sq::::res://AlegreyaTheme.tres<>uid://42tgnvycceak::::res://code Column.tscn<>uid://cp2jsdrd3iquc::::res://LikeGame.tscn<>uid://j8buu3bbe8y6::::res://bounds.png<>uid://j2dxqqd65sgn::::res://AlegreyaSans-BoldItalic.ttf<>uid://bv6po11n2odm1::::res://Scripts/FramerateManager.cs<>uid://c7ajlfuioc4gb::::res://CodeTheme.tres<>uid://dxubvxwpwkncd::::res://Scripts/LoadScriptButton.cs<>uid://b512ejks5k7hw::::res://Scripts/Level/Level.cs
+LikeGame.tscn::PackedScene/PackedScene::5881991002547270922::1754066148::0::1::::<><><>0<>0<><>::uid://jlhqv6a25dtc::::res://grassRound.png<>uid://knubq6angj30::::res://Scripts/Game.cs<>uid://deubxfo3smsy4::::res://sky.png<>uid://cc75uuyla7gh2::::res://borshevik.tscn
+my solution to level 1.gd::GDScript/GDScript::5557689068997483139::1754060773::0::1::::<>Node<><>0<>0<><>::
+Pixel.tres::Theme/Theme::2506998071891496453::1754060765::0::1::::<><><>0<>0<><>::uid://br24avkn83jqw::::res://AVM mono 5x6.ttf
+scene.tscn::PackedScene/PackedScene::4756419114246952993::1754066148::0::1::::<><><>0<>0<><>::uid://cp2jsdrd3iquc::::res://LikeGame.tscn<>uid://d1bsgsasxc8yl::::res://ui.tscn<>uid://cxpixrllqhb3u::::res://booka.png<>uid://bjao6wy3xxf5l::::res://antivirusman.png<>uid://dktnsoikdpxe4::::res://dialogPopup.png<>uid://cggg6lhpyqm3w::::res://Scripts/Dialog/Dialog.cs<>uid://bbyn5ld4xe3bd::::res://Pixel.tres<>uid://bidtrmcbswkfw::::res://Scripts/Dialog/Scenario.cs<>uid://dapxpmwps1628::::res://Scripts/Dialog/SkipButton.cs<>uid://dywmbsnauf0bp::::res://skip.png
+skip.png::CompressedTexture2D/CompressedTexture2D::8889941964218210109::1754061551::1754061554::1::::<><><>0<>0<>54f263693e05bbddf87c71ab9b0920df<>res://.godot/imported/skip.png-fe96bdbd8d9694965786ce5818258d80.ctex::
 sky.png::CompressedTexture2D/CompressedTexture2D::7481407056505959061::1753964137::1753964140::1::::<><><>0<>0<>4b8f3f8694e52243b1b97683a90d3b87<>res://.godot/imported/sky.png-26d2f2385da36d2602e95bc19d12fcc5.ctex::
 stepa and cultist robe.png::CompressedTexture2D/CompressedTexture2D::2848290393515162750::1754037258::1754037296::1::::<><><>0<>0<>dff9ddc6151d946abc9121660ba87288<>res://.godot/imported/stepa and cultist robe.png-6a77d9b174fda33a7905fc8b246d8723.ctex::
+ui.tscn::PackedScene/PackedScene::8987340930324424191::1754063613::0::1::::<><><>0<>0<><>::uid://j8buu3bbe8y6::::res://bounds.png<>uid://ded1ooo8os7sq::::res://AlegreyaTheme.tres<>uid://bv6po11n2odm1::::res://Scripts/FramerateManager.cs<>uid://j2dxqqd65sgn::::res://AlegreyaSans-BoldItalic.ttf<>uid://42tgnvycceak::::res://code Column.tscn<>uid://c7ajlfuioc4gb::::res://CodeTheme.tres<>uid://b512ejks5k7hw::::res://Scripts/Level/Level.cs<>uid://m207vnkmpwtx::::res://Levels/dummy.gd<>uid://dxubvxwpwkncd::::res://Scripts/LoadScriptButton.cs
 worm.png::CompressedTexture2D/CompressedTexture2D::6756308303333745482::1754037517::1754037520::1::::<><><>0<>0<>a7e29d6551c421a1330a4df86524b7df<>res://.godot/imported/worm.png-2e1629290dddf451fbcf9903ce499d1e.ctex::
-::res://Levels/::1753977834
+::res://Levels/::1754046309
+dummy.gd::GDScript/GDScript::899580516783937197::1754046309::0::1::::<>Node<><>0<>0<><>::
 level_1.gd::GDScript/GDScript::578368480766641129::1753977730::0::1::::<>Node<><>0<>0<><>::
 level_1_sol.gd::GDScript/GDScript::2563038790436875885::1753961594::0::1::::<>Node<><>0<>0<><>::
 level_2.gd::GDScript/GDScript::6287772259394344844::1753977834::0::1::::<>Node<><>0<>0<><>::
 level_2_sol.gd::GDScript/GDScript::6452082433306252919::1753977493::0::1::::<>Node<><>0<>0<><>::
-::res://Scripts/::1754029623
-CodeColumn.cs::CSharpScript::8392358682730295272::1753955695::0::1::::<>Node<><>0<>0<><>::
-ColorLerp.cs::CSharpScript/CSharpScript::447091279184856081::1753961718::0::1::::<><><>0<>0<><>::
-FramerateManager.cs::CSharpScript::3925319272873113982::1753973998::0::1::::<>RichTextLabel<><>0<>0<><>::
-Game.cs::CSharpScript::729942361112493877::1753976900::0::1::::<>Sprite2D<><>0<>0<><>::
-LoadScriptButton.cs::CSharpScript::8814992471234102155::1753955867::0::1::::<>Button<><>0<>0<><>::
-ScriptParser.cs::CSharpScript/CSharpScript::932344876252333490::1753959040::0::1::::<><><>0<>0<><>::
+::res://Scripts/::1754067382
+CodeColumn.cs::CSharpScript/CSharpScript::8392358682730295272::1753955695::0::1::::<>Node<><>0<>0<><>::
+FramerateManager.cs::CSharpScript/CSharpScript::3925319272873113982::1754059350::0::1::::<>RichTextLabel<><>0<>0<><>::
+Game.cs::CSharpScript/CSharpScript::729942361112493877::1754059408::0::1::::<>Sprite2D<><>0<>0<><>::
+LoadScriptButton.cs::CSharpScript/CSharpScript::8814992471234102155::1753955867::0::1::::<>Button<><>0<>0<><>::
+Replica.cs::CSharpScript::112935227891619300::1754067359::0::1::::<><><>0<>0<><>::
+::res://Scripts/Dialog/::1754061661
+Dialog.cs::CSharpScript::5206780946591135262::1754067253::0::1::::<>Node2D<><>0<>0<><>::
+Scenario.cs::CSharpScript::2955309180858661976::1754066824::0::1::::<>Node<><>0<>0<><>::
+SkipButton.cs::CSharpScript/CSharpScript::7191651660104944899::1754064484::0::1::::<>Sprite2D<><>0<>0<><>::
 ::res://Scripts/Level/::1754031081
-Level.cs::CSharpScript::4547406805436494324::1754033622::0::1::::<>Button<><>0<>0<><>::
+Level.cs::CSharpScript/CSharpScript::4547406805436494324::1754061393::0::1::::<>Button<><>0<>0<><>::
 LevelReqirements.cs::CSharpScript/CSharpScript::453736759593010335::1754029838::0::1::::<><><>0<>0<><>::
 Properties.cs::CSharpScript/CSharpScript::4626243799300171721::1754031469::0::1::::<><><>0<>0<><>::
-TestedScript.cs::CSharpScript::2703912379377770111::1754035055::0::1::::<><><>0<>0<><>::
+TestedScript.cs::CSharpScript/CSharpScript::2703912379377770111::1754035055::0::1::::<><><>0<>0<><>::
 TestResults.cs::CSharpScript/CSharpScript::1409058436050686196::1754029684::0::1::::<><><>0<>0<><>::
+::res://Scripts/Util/::1754055808
+ColorLerp.cs::CSharpScript/CSharpScript::447091279184856081::1753961718::0::1::::<><><>0<>0<><>::
+ScriptParser.cs::CSharpScript/CSharpScript::932344876252333490::1753959040::0::1::::<><><>0<>0<><>::
+UnsafeMath.cs::CSharpScript/CSharpScript::2684546179225934708::1754057110::0::1::::<><><>0<>0<><>::

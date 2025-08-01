@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fK4SCcwX71s=",
+  "dgSpecHash": "XdXKow8LmLI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\testr\\Documents\\avm_noloop_exercises\\AVM_NoLoop_Exercises.csproj",
+  "projectFilePath": "C:\\Users\\testr\\Documents\\noloop_exercises\\avm_noloop_exercises\\AVM_NoLoop_Exercises.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\testr\\.nuget\\packages\\godot.sourcegenerators\\4.4.1\\godot.sourcegenerators.4.4.1.nupkg.sha512",
     "C:\\Users\\testr\\.nuget\\packages\\godotsharp\\4.4.1\\godotsharp.4.4.1.nupkg.sha512",

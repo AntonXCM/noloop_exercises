@@ -26,13 +26,21 @@ public partial class Level : Button
     }
     public override void _Ready()
     {
-        fileDialog.Popup();
         fileDialog.DirSelected += FolderPicked;
+        fileDialog.Canceled += RequestFolder;
+        RequestFolder();
         FramerateManager.FPS = 5;
         Instance = this;
     }
+    public void RequestFolder()
+    {
+        GetWindow().MousePassthrough = true;
+        fileDialog.Popup();
+    }
     public void FolderPicked(string path)
     {
+        GetWindow().MousePassthrough = false;
+        GetWindow().GrabFocus();
         userCodePath = Path.Combine(path, userCodePath);
         LoadLevel(index);
     }
@@ -59,6 +67,7 @@ public partial class Level : Button
     }
     public override void _Pressed()
     {
+        FramerateManager.FPS ++;
         userScript.text = userCode.Code;
         userScript.SaveCompile();
 

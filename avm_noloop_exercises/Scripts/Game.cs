@@ -6,6 +6,7 @@ public partial class Game : Sprite2D
     [Export] PackedScene[] decors;
     [Export] int decorCount;
     [Export] float rotationSpeed = 1, radius = 1;
+    float frame;
     public override void _Ready()
     {
         Vector2 localPos;
@@ -19,11 +20,15 @@ public partial class Game : Sprite2D
             decor.Position = localPos * radius;
             decor.RotationDegrees += Mathf.RadToDeg(localPos.Angle()) + 90;
         }
+        
     }
 
     public override void _Process(double delta)
     {
-        Rotation += (float)(rotationSpeed / 30 / delta);
+        frame += (float)delta;
+        if (frame < FramerateManager.FrameTime) return;
+        frame -= FramerateManager.FrameTime;
+        RotationDegrees += (float)(rotationSpeed / FramerateManager.FrameTime);
     }
 
 }

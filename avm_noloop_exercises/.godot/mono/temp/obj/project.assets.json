@@ -93,11 +93,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\testr\\Documents\\avm_noloop_exercises\\AVM_NoLoop_Exercises.csproj",
+      "projectUniqueName": "C:\\Users\\testr\\Documents\\noloop_exercises\\avm_noloop_exercises\\AVM_NoLoop_Exercises.csproj",
       "projectName": "AVM_NoLoop_Exercises",
-      "projectPath": "c:\\Users\\testr\\Documents\\avm_noloop_exercises\\AVM_NoLoop_Exercises.csproj",
+      "projectPath": "C:\\Users\\testr\\Documents\\noloop_exercises\\avm_noloop_exercises\\AVM_NoLoop_Exercises.csproj",
       "packagesPath": "C:\\Users\\testr\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\testr\\Documents\\avm_noloop_exercises\\.godot\\mono\\temp\\obj\\",
+      "outputPath": "C:\\Users\\testr\\Documents\\noloop_exercises\\avm_noloop_exercises\\.godot\\mono\\temp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\testr\\AppData\\Roaming\\NuGet\\NuGet.Config"

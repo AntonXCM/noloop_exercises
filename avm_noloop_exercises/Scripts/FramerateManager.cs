@@ -1,6 +1,7 @@
 using Godot;
 public partial class FramerateManager : RichTextLabel
 {
+    public static float FrameTime { get; private set; }
     private static int fps;
     public static int FPS
     {
@@ -8,7 +9,7 @@ public partial class FramerateManager : RichTextLabel
         set
         {
             fps = value;
-            Engine.MaxFps = fps;
+            FrameTime = 1f / fps;
             Instance.Text = "FPS=" + fps;
         }
     }
