@@ -1,0 +1,7 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://ded1ooo8os7sq"]
+
+[ext_resource type="FontFile" uid="uid://e4ev0yth6i4s" path="res://AlegreyaSans-Light.ttf" id="1_p4cwe"]
+
+[resource]
+default_font = ExtResource("1_p4cwe")
+default_font_size = 21

@@ -1,0 +1,11 @@
+res://scene.tscn
+res://AlegreyaTheme.tres
+res://code Column.tscn
+res://LikeGame.tscn
+res://borshevik.tscn
+res://Scripts/CodeColumn.cs
+res://Scripts/LoadScriptButton.cs
+res://Scripts/Game.cs
+res://Scripts/Level/Level.cs
+res://Scripts/FramerateManager.cs
+res://Levels/dummy.gd

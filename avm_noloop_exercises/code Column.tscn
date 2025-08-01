@@ -1,0 +1,68 @@
+[gd_scene load_steps=6 format=3 uid="uid://42tgnvycceak"]
+
+[ext_resource type="Script" uid="uid://drtk6ldmbtof5" path="res://Scripts/CodeColumn.cs" id="1_w4f0d"]
+[ext_resource type="Theme" uid="uid://ded1ooo8os7sq" path="res://AlegreyaTheme.tres" id="2_fjnsm"]
+[ext_resource type="Theme" uid="uid://c7ajlfuioc4gb" path="res://CodeTheme.tres" id="3_h1n4n"]
+[ext_resource type="Theme" uid="uid://dcpo1mk6tynei" path="res://FiraCodeLight.tres" id="4_h1n4n"]
+
+[sub_resource type="CodeHighlighter" id="CodeHighlighter_h1n4n"]
+number_color = Color(0.173792, 0.876695, 0.420548, 1)
+symbol_color = Color(0.952941, 0.952941, 0.980392, 1)
+function_color = Color(0.90929, 0.644937, 1, 1)
+member_variable_color = Color(0.91, 0.841598, 0.5369, 1)
+
+[node name="Column" type="Control" node_paths=PackedStringArray("code", "results", "label", "path")]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_w4f0d")
+code = NodePath("Code")
+results = NodePath("Result")
+label = NodePath("Label")
+path = NodePath("Path")
+
+[node name="Label" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_top = 55.0
+offset_right = 563.0
+offset_bottom = 80.0
+theme = ExtResource("2_fjnsm")
+text = "Level Code:"
+
+[node name="Code" type="CodeEdit" parent="."]
+layout_mode = 0
+offset_top = 81.0
+offset_right = 561.0
+offset_bottom = 331.0
+theme = ExtResource("3_h1n4n")
+syntax_highlighter = SubResource("CodeHighlighter_h1n4n")
+highlight_all_occurrences = true
+draw_control_chars = true
+draw_tabs = true
+gutters_draw_line_numbers = true
+code_completion_enabled = true
+indent_use_spaces = true
+auto_brace_completion_enabled = true
+
+[node name="Result" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_top = 332.0
+offset_right = 563.0
+offset_bottom = 437.0
+theme = ExtResource("2_fjnsm")
+bbcode_enabled = true
+text = "Analysis Result:
+1
+2
+"
+
+[node name="Path" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 560.0
+offset_top = 82.0
+offset_right = 807.0
+offset_bottom = 107.0
+rotation = 1.5708
+theme = ExtResource("4_h1n4n")
+theme_override_colors/default_color = Color(1, 1, 1, 0.486275)
+text = "File/path/on/my/computer
+"

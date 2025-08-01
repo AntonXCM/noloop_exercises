@@ -1,0 +1,7 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://c7ajlfuioc4gb"]
+
+[ext_resource type="FontFile" uid="uid://c55ibp6ejmnyq" path="res://FiraCode-Retina.ttf" id="1_ydnt5"]
+
+[resource]
+default_font = ExtResource("1_ydnt5")
+default_font_size = 15

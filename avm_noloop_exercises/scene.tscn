@@ -1,0 +1,119 @@
+[gd_scene load_steps=11 format=3 uid="uid://b81br7igtldvd"]
+
+[ext_resource type="Theme" uid="uid://ded1ooo8os7sq" path="res://AlegreyaTheme.tres" id="1_m7jmp"]
+[ext_resource type="PackedScene" uid="uid://42tgnvycceak" path="res://code Column.tscn" id="1_u3cyc"]
+[ext_resource type="PackedScene" uid="uid://cp2jsdrd3iquc" path="res://LikeGame.tscn" id="1_xlvrw"]
+[ext_resource type="Texture2D" uid="uid://j8buu3bbe8y6" path="res://bounds.png" id="2_73fnb"]
+[ext_resource type="FontFile" uid="uid://j2dxqqd65sgn" path="res://AlegreyaSans-BoldItalic.ttf" id="2_u3cyc"]
+[ext_resource type="Script" uid="uid://bv6po11n2odm1" path="res://Scripts/FramerateManager.cs" id="4_73fnb"]
+[ext_resource type="Theme" uid="uid://c7ajlfuioc4gb" path="res://CodeTheme.tres" id="4_y2354"]
+[ext_resource type="Script" uid="uid://dxubvxwpwkncd" path="res://Scripts/LoadScriptButton.cs" id="5_m7jmp"]
+[ext_resource type="Script" uid="uid://b512ejks5k7hw" path="res://Scripts/Level/Level.cs" id="8_73fnb"]
+[ext_resource type="Script" uid="uid://m207vnkmpwtx" path="res://Levels/dummy.gd" id="9_5juve"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="GameWorld" parent="." instance=ExtResource("1_xlvrw")]
+texture_filter = 2
+position = Vector2(616, 2223)
+rotation = 3.14159
+scale = Vector2(-0.533445, -0.533445)
+
+[node name="Bounds" type="Sprite2D" parent="."]
+position = Vector2(576, 424)
+scale = Vector2(1.46683, 0.590377)
+texture = ExtResource("2_73fnb")
+
+[node name="FPS Label" type="RichTextLabel" parent="."]
+offset_left = 6.0
+offset_top = 6.0
+offset_right = 1142.0
+offset_bottom = 78.0
+theme = ExtResource("1_m7jmp")
+text = "Fps=24"
+script = ExtResource("4_73fnb")
+
+[node name="Level Label" type="RichTextLabel" parent="."]
+offset_left = 319.0
+offset_top = 134.0
+offset_right = 817.0
+offset_bottom = 178.0
+focus_mode = 2
+theme = ExtResource("1_m7jmp")
+theme_override_fonts/normal_font = ExtResource("2_u3cyc")
+theme_override_font_sizes/normal_font_size = 43
+text = "Level Label bro"
+horizontal_alignment = 1
+selection_enabled = true
+
+[node name="Level Code" parent="." instance=ExtResource("1_u3cyc")]
+offset_left = 9.0
+offset_top = 156.0
+offset_right = 9.0
+offset_bottom = 156.0
+
+[node name="User Code" parent="." instance=ExtResource("1_u3cyc")]
+offset_left = 583.0
+offset_top = 156.0
+offset_right = 583.0
+offset_bottom = 156.0
+
+[node name="Submit Button" type="Button" parent="." node_paths=PackedStringArray("levelCode", "userCode", "label", "fileDialog")]
+offset_left = 9.0
+offset_top = 557.0
+offset_right = 570.0
+offset_bottom = 631.0
+theme = ExtResource("4_y2354")
+theme_override_font_sizes/font_size = 20
+text = "Submit"
+script = ExtResource("8_73fnb")
+dummyScript = ExtResource("9_5juve")
+levelCode = NodePath("../Level Code")
+userCode = NodePath("../User Code")
+label = NodePath("../Level Label")
+levelCodePath = "res://Levels/level_"
+userCodePath = "my solution to level "
+badColor = Color(1, 0, 0, 1)
+okColor = Color(1, 0.730144, 0.45088, 1)
+goodColor = Color(9.62615e-07, 0.903447, 0.400778, 1)
+fileDialog = NodePath("Save Dialog")
+
+[node name="Confirm Dialog" type="AcceptDialog" parent="Submit Button"]
+title = "SAVE"
+initial_position = 2
+size = Vector2i(240, 182)
+force_native = true
+dialog_text = "Hey! To compile code you
+need to save it on drive"
+dialog_autowrap = true
+
+[node name="Save Dialog" type="FileDialog" parent="Submit Button"]
+auto_translate_mode = 1
+title = "Open a Directory"
+initial_position = 2
+ok_button_text = "Select Current Folder"
+file_mode = 2
+access = 2
+show_hidden_files = true
+use_native_dialog = true
+
+[node name="Load Script Button" type="Button" parent="." node_paths=PackedStringArray("dialog", "level")]
+offset_left = 583.0
+offset_top = 557.0
+offset_right = 1136.0
+offset_bottom = 631.0
+theme = ExtResource("4_y2354")
+theme_override_font_sizes/font_size = 20
+text = "Load script file"
+script = ExtResource("5_m7jmp")
+dialog = NodePath("Load Dialog")
+level = NodePath("../Submit Button")
+
+[node name="Load Dialog" type="FileDialog" parent="Load Script Button"]
+title = "Open a File"
+initial_position = 2
+ok_button_text = "Open"
+file_mode = 0
+access = 2
+show_hidden_files = true
+use_native_dialog = true
