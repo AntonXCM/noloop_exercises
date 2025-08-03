@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3 uid="uid://diouaeh58f3a5"]
+
+[ext_resource type="PackedScene" uid="uid://dnc65jl664rk" path="res://Scenarios/Basic.tscn" id="1_wbugu"]
+[ext_resource type="Script" uid="uid://buya54svgxw3" path="res://Scripts/Dialog/Replica.cs" id="2_u445r"]
+
+[sub_resource type="Resource" id="Resource_ktus8"]
+script = ExtResource("2_u445r")
+text = "AAAAAAA"
+actor = "Antivirusman"
+metadata/_custom_type_script = "uid://buya54svgxw3"
+
+[sub_resource type="Resource" id="Resource_wbugu"]
+script = ExtResource("2_u445r")
+text = "Don't leave our game, username!!!!!!"
+actor = "Antivirusman"
+metadata/_custom_type_script = "uid://buya54svgxw3"
+
+[node name="Scenario" instance=ExtResource("1_wbugu")]
+replics = Array[Object]([SubResource("Resource_ktus8"), SubResource("Resource_wbugu")])

@@ -29,6 +29,8 @@ project/assembly_name="AVM_NoLoop_Exercises"
 [file_customization]
 
 folder_colors={
+"res://Fonts/": "red",
+"res://GameScenes/": "green",
 "res://Scripts/": "blue"
 }
 

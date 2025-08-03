@@ -1,0 +1,6 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://bbyn5ld4xe3bd"]
+
+[ext_resource type="FontFile" uid="uid://br24avkn83jqw" path="res://Fonts/AVM mono 5x6.ttf" id="1_5k3t7"]
+
+[resource]
+default_font = ExtResource("1_5k3t7")

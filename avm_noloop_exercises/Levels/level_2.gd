@@ -1,6 +1,8 @@
 extends Node
 
-var ARGS : Array = [11,10.75]
+func get_args() -> Array:
+	return [randi_range(1, 100), randi_range(1, 9)]
+	
 var DESCRIPTION : String = "Root" 
 var REQUIRE_MS : int = 10;
 var REQUIRE_LINES : int = 1;

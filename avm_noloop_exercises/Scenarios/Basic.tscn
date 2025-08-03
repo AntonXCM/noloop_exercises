@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://dnc65jl664rk"]
+
+[ext_resource type="Script" uid="uid://bidtrmcbswkfw" path="res://Scripts/Dialog/Scenario.cs" id="1_5d3kk"]
+
+[node name="Scenario" type="Node"]
+script = ExtResource("1_5d3kk")
+replics = Array[Object]([])

@@ -29,7 +29,7 @@ public partial class Level : Button
         {
             this.path = path;
             Compile();
-            text = Godot.FileAccess.GetFileAsString(path);
+            text = script.SourceCode;
             onChanged?.Invoke();
             return this;
         }
@@ -44,7 +44,6 @@ public partial class Level : Button
         public void SaveCompile()
         {
             if (string.IsNullOrWhiteSpace(path)) return;
-            GD.Print(text);
             File.WriteAllText(path, text);
             Compile();
         }

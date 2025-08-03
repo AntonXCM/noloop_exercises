@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AVM_NoLoop_Exercises")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e2ea8fe0b6d84a9295812ec171dc3998f6fa28bf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1227a5e9859515a7704f81f724c17902b7bc20b7")]
 [assembly: System.Reflection.AssemblyProductAttribute("AVM_NoLoop_Exercises")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AVM_NoLoop_Exercises")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

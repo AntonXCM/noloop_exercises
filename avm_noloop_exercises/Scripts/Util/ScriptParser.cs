@@ -27,13 +27,12 @@ static class ScriptParser
 
     public static string Shorten(string code)
     {
+        code = SolutionOf(code);
         var lines = code.Split('\n');
         var result = new StringBuilder();
 
-        foreach (var rawLine in lines)
+        foreach (var line in lines)
         {
-            string line = rawLine.TrimEnd('\r');
-
             if (string.IsNullOrEmpty(line.TrimStart()))
                 continue;
 
@@ -47,7 +46,6 @@ static class ScriptParser
 
             result.AppendLine(cleaned);
         }
-
         return result.ToString();
     }
 

@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3 uid="uid://bcrdnxtnf4mte"]
+
+[ext_resource type="PackedScene" uid="uid://dnc65jl664rk" path="res://Scenarios/Basic.tscn" id="1_rgiwh"]
+[ext_resource type="Script" uid="uid://buya54svgxw3" path="res://Scripts/Dialog/Replica.cs" id="2_ifhub"]
+
+[sub_resource type="Resource" id="Resource_8hnsw"]
+script = ExtResource("2_ifhub")
+text = "What is this sound? Ambulance?"
+actor = "Antivirusman"
+metadata/_custom_type_script = "uid://buya54svgxw3"
+
+[sub_resource type="Resource" id="Resource_l76ia"]
+script = ExtResource("2_ifhub")
+text = "No, we're being bombed"
+actor = "Ambulance"
+metadata/_custom_type_script = "uid://buya54svgxw3"
+
+[node name="Scenario" instance=ExtResource("1_rgiwh")]
+replics = Array[Object]([SubResource("Resource_8hnsw"), SubResource("Resource_l76ia")])

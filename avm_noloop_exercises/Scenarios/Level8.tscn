@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3 uid="uid://cv06bfls8vggs"]
+
+[ext_resource type="PackedScene" uid="uid://dnc65jl664rk" path="res://Scenarios/Basic.tscn" id="1_n8n3t"]
+[ext_resource type="Script" uid="uid://buya54svgxw3" path="res://Scripts/Dialog/Replica.cs" id="2_n6ue8"]
+
+[sub_resource type="Resource" id="Resource_f0tff"]
+script = ExtResource("2_n6ue8")
+text = "I wish you would finish the game and I would live in it."
+actor = "Worm"
+metadata/_custom_type_script = "uid://buya54svgxw3"
+
+[sub_resource type="Resource" id="Resource_6urh1"]
+script = ExtResource("2_n6ue8")
+text = "We will definitely finish it."
+actor = "Antivirusman"
+metadata/_custom_type_script = "uid://buya54svgxw3"
+
+[node name="Scenario" instance=ExtResource("1_n8n3t")]
+replics = Array[Object]([SubResource("Resource_f0tff"), SubResource("Resource_6urh1")])

@@ -1,0 +1,37 @@
+[gd_scene load_steps=8 format=3 uid="uid://dgtvjpapn7xty"]
+
+[ext_resource type="PackedScene" uid="uid://dnc65jl664rk" path="res://Scenarios/Basic.tscn" id="1_ky2mb"]
+[ext_resource type="Script" uid="uid://buya54svgxw3" path="res://Scripts/Dialog/Replica.cs" id="2_ceh72"]
+
+[sub_resource type="Resource" id="Resource_dc2hj"]
+script = ExtResource("2_ceh72")
+text = "Hello, username! I am Antivirus Man Do you remember me?"
+actor = "Antivirusman"
+metadata/_custom_type_script = "uid://buya54svgxw3"
+
+[sub_resource type="Resource" id="Resource_q16ed"]
+script = ExtResource("2_ceh72")
+text = "Of course! You created me and this world!"
+actor = "Antivirusman"
+metadata/_custom_type_script = "uid://buya54svgxw3"
+
+[sub_resource type="Resource" id="Resource_y2a2y"]
+script = ExtResource("2_ceh72")
+text = "You have to refactor code to improve FPS"
+actor = "Antivirusman"
+metadata/_custom_type_script = "uid://buya54svgxw3"
+
+[sub_resource type="Resource" id="Resource_d3lca"]
+script = ExtResource("2_ceh72")
+text = "Code are written on GDScript.Loops lowers performance"
+actor = "Antivirusman"
+metadata/_custom_type_script = "uid://buya54svgxw3"
+
+[sub_resource type="Resource" id="Resource_rvcck"]
+script = ExtResource("2_ceh72")
+text = "Press \"Submit\" to submit and \"Next Level to go to next level"
+actor = "Antivirusman"
+metadata/_custom_type_script = "uid://buya54svgxw3"
+
+[node name="Scenario" instance=ExtResource("1_ky2mb")]
+replics = Array[Object]([SubResource("Resource_dc2hj"), SubResource("Resource_q16ed"), SubResource("Resource_y2a2y"), SubResource("Resource_d3lca"), SubResource("Resource_rvcck")])

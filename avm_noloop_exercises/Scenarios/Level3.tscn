@@ -1,0 +1,31 @@
+[gd_scene load_steps=7 format=3 uid="uid://bnleet076o5jd"]
+
+[ext_resource type="PackedScene" uid="uid://dnc65jl664rk" path="res://Scenarios/Basic.tscn" id="1_nyy3r"]
+[ext_resource type="Script" uid="uid://buya54svgxw3" path="res://Scripts/Dialog/Replica.cs" id="2_sge7g"]
+
+[sub_resource type="Resource" id="Resource_1gj10"]
+script = ExtResource("2_sge7g")
+text = "Hey, username and Antivirus"
+actor = "Booka"
+metadata/_custom_type_script = "uid://buya54svgxw3"
+
+[sub_resource type="Resource" id="Resource_is1xd"]
+script = ExtResource("2_sge7g")
+text = "Hello!"
+actor = "Antivirusman"
+metadata/_custom_type_script = "uid://buya54svgxw3"
+
+[sub_resource type="Resource" id="Resource_lvhat"]
+script = ExtResource("2_sge7g")
+text = "Optimize the game faster, I'm too slow"
+actor = "Booka"
+metadata/_custom_type_script = "uid://buya54svgxw3"
+
+[sub_resource type="Resource" id="Resource_cpatg"]
+script = ExtResource("2_sge7g")
+text = "No problem"
+actor = "Antivirusman"
+metadata/_custom_type_script = "uid://buya54svgxw3"
+
+[node name="Scenario" instance=ExtResource("1_nyy3r")]
+replics = Array[Object]([SubResource("Resource_1gj10"), SubResource("Resource_is1xd"), SubResource("Resource_lvhat"), SubResource("Resource_cpatg")])

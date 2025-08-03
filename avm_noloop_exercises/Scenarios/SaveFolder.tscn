@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=3 uid="uid://07qmm6y7db37"]
+
+[ext_resource type="PackedScene" uid="uid://dnc65jl664rk" path="res://Scenarios/Basic.tscn" id="1_n5ekr"]
+[ext_resource type="Script" uid="uid://buya54svgxw3" path="res://Scripts/Dialog/Replica.cs" id="2_mmfjw"]
+
+[sub_resource type="Resource" id="Resource_ks4iw"]
+script = ExtResource("2_mmfjw")
+text = "Hi! To play you have to select folder where your scripts will be saved"
+actor = "Antivirusman"
+metadata/_custom_type_script = "uid://buya54svgxw3"
+
+[node name="Scenario" instance=ExtResource("1_n5ekr")]
+replics = Array[Object]([SubResource("Resource_ks4iw")])

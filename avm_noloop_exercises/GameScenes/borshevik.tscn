@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cc75uuyla7gh2"]
+
+[ext_resource type="Texture2D" uid="uid://re7b6o5bo1wi" path="res://Sprites/borshevik.png" id="1_4qsfr"]
+
+[node name="Borshevik" type="Sprite2D"]
+rotation = -0.26529
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("1_4qsfr")

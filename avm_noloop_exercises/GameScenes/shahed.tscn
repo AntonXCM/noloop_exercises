@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://dmrl8jqs13pqu"]
+
+[ext_resource type="Texture2D" uid="uid://33e2mqxsaqa" path="res://Sprites/shahed.png" id="1_fp3hj"]
+[ext_resource type="Script" uid="uid://dv2hx7xdj70es" path="res://Scripts/Rocket.cs" id="2_dsfdv"]
+
+[node name="Shahed" type="Sprite2D"]
+z_index = -1
+rotation = -1.20253
+scale = Vector2(0.416565, 0.416565)
+texture = ExtResource("1_fp3hj")
+script = ExtResource("2_dsfdv")
+Speed = Vector2(0, -200.525)

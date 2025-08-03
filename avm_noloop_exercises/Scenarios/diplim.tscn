@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://b08iishi707ml"]
+
+[ext_resource type="Texture2D" uid="uid://qgs380vuon10" path="res://Sprites/diplim.png" id="1_8subu"]
+[ext_resource type="FontFile" uid="uid://bnatg3wfhe2ed" path="res://Fonts/DniproCity-Bold.ttf" id="2_5hr3b"]
+[ext_resource type="Script" uid="uid://cl4ohpvfxdlfk" path="res://Scripts/Dialog/UsernameText.cs" id="3_2muya"]
+
+[node name="Diplim" type="Sprite2D"]
+position = Vector2(577, 276)
+texture = ExtResource("1_8subu")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -92.0
+offset_top = -66.0
+offset_right = 92.0
+offset_bottom = -21.0
+theme_override_colors/font_color = Color(0.266667, 0.423529, 0.580392, 1)
+theme_override_fonts/font = ExtResource("2_5hr3b")
+theme_override_font_sizes/font_size = 44
+text = "Username"
+script = ExtResource("3_2muya")

@@ -1,34 +1,168 @@
-[gd_scene load_steps=15 format=3 uid="uid://b81br7igtldvd"]
+[gd_scene load_steps=38 format=3 uid="uid://b81br7igtldvd"]
 
-[ext_resource type="PackedScene" uid="uid://cp2jsdrd3iquc" path="res://LikeGame.tscn" id="1_xlvrw"]
-[ext_resource type="Script" uid="uid://buya54svgxw3" path="res://Scripts/Dialog/Replica.cs" id="4_fy5k1"]
-[ext_resource type="PackedScene" uid="uid://d1bsgsasxc8yl" path="res://ui.tscn" id="8_5juve"]
-[ext_resource type="Texture2D" uid="uid://cxpixrllqhb3u" path="res://booka.png" id="11_fy5k1"]
-[ext_resource type="Texture2D" uid="uid://bjao6wy3xxf5l" path="res://antivirusman.png" id="12_5c1cw"]
-[ext_resource type="Texture2D" uid="uid://dktnsoikdpxe4" path="res://dialogPopup.png" id="13_akxrc"]
+[ext_resource type="PackedScene" uid="uid://cp2jsdrd3iquc" path="res://GameScenes/LikeGame.tscn" id="1_xlvrw"]
+[ext_resource type="PackedScene" uid="uid://d1bsgsasxc8yl" path="res://UI/ui.tscn" id="8_5juve"]
+[ext_resource type="Script" uid="uid://cdbvsmtaqnjoc" path="res://Booka.cs" id="9_wncyr"]
+[ext_resource type="Script" uid="uid://ncp7icpnmfv4" path="res://Scripts/CutsceneManager.cs" id="11_5c1cw"]
+[ext_resource type="Texture2D" uid="uid://cxpixrllqhb3u" path="res://Sprites/booka.png" id="11_fy5k1"]
+[ext_resource type="Texture2D" uid="uid://bjao6wy3xxf5l" path="res://Sprites/antivirusman.png" id="12_5c1cw"]
+[ext_resource type="Script" uid="uid://c2epjqmh6788g" path="res://Scripts/LikeGame/Antivirusman.cs" id="12_akxrc"]
+[ext_resource type="PackedScene" uid="uid://07qmm6y7db37" path="res://Scenarios/SaveFolder.tscn" id="12_gu47o"]
+[ext_resource type="Texture2D" uid="uid://dktnsoikdpxe4" path="res://UI/dialogPopup.png" id="13_akxrc"]
+[ext_resource type="PackedScene" uid="uid://dgtvjpapn7xty" path="res://Scenarios/Level1.tscn" id="13_gu47o"]
 [ext_resource type="Script" uid="uid://cggg6lhpyqm3w" path="res://Scripts/Dialog/Dialog.cs" id="14_8hm71"]
-[ext_resource type="Theme" uid="uid://bbyn5ld4xe3bd" path="res://Pixel.tres" id="14_gu47o"]
-[ext_resource type="Script" uid="uid://bidtrmcbswkfw" path="res://Scripts/Dialog/Scenario.cs" id="15_223my"]
+[ext_resource type="PackedScene" uid="uid://c68h4vtjprdg0" path="res://Scenarios/Level2.tscn" id="14_17rhs"]
+[ext_resource type="PackedScene" uid="uid://b08iishi707ml" path="res://Scenarios/diplim.tscn" id="14_223my"]
+[ext_resource type="Theme" uid="uid://bbyn5ld4xe3bd" path="res://Fonts/Pixel.tres" id="14_gu47o"]
+[ext_resource type="PackedScene" uid="uid://bnleet076o5jd" path="res://Scenarios/Level3.tscn" id="15_1q4c1"]
+[ext_resource type="PackedScene" uid="uid://c7l34okmnr5cq" path="res://Scenarios/Level4.tscn" id="16_aobyt"]
 [ext_resource type="Script" uid="uid://dapxpmwps1628" path="res://Scripts/Dialog/SkipButton.cs" id="17_8j1ou"]
-[ext_resource type="Texture2D" uid="uid://dywmbsnauf0bp" path="res://skip.png" id="17_17rhs"]
+[ext_resource type="Texture2D" uid="uid://dywmbsnauf0bp" path="res://Sprites/skip.png" id="17_17rhs"]
+[ext_resource type="PackedScene" uid="uid://54s4dcuscs2m" path="res://Scenarios/Level5.tscn" id="17_i6j5g"]
+[ext_resource type="PackedScene" uid="uid://bcrdnxtnf4mte" path="res://Scenarios/Level6.tscn" id="18_g6g5t"]
+[ext_resource type="PackedScene" uid="uid://drou1hpc8nvbl" path="res://Scenarios/Level7.tscn" id="19_iss77"]
+[ext_resource type="PackedScene" uid="uid://cv06bfls8vggs" path="res://Scenarios/Level8.tscn" id="20_xb05w"]
+[ext_resource type="PackedScene" uid="uid://diouaeh58f3a5" path="res://Scenarios/Level9.tscn" id="21_wncyr"]
+[ext_resource type="Texture2D" uid="uid://i8e7btxgemfk" path="res://Sprites/ambulance.png" id="23_i6j5g"]
+[ext_resource type="PackedScene" uid="uid://dmrl8jqs13pqu" path="res://GameScenes/shahed.tscn" id="23_m514l"]
+[ext_resource type="Texture2D" uid="uid://cnndajuo8irc7" path="res://Sprites/kumo.png" id="24_g6g5t"]
+[ext_resource type="Texture2D" uid="uid://c3i2n7ycip8ly" path="res://Sprites/worm.png" id="24_iss77"]
+[ext_resource type="Script" uid="uid://c7lb31rh4u54h" path="res://Worm.cs" id="25_xb05w"]
+[ext_resource type="Texture2D" uid="uid://bgq7k4yagp3io" path="res://Sprites/ash.png" id="26_iss77"]
+[ext_resource type="AudioStream" uid="uid://dp2miu25mbmwp" path="res://trivoga.mp3" id="29_pou65"]
+[ext_resource type="Texture2D" uid="uid://bby2ygj7ksyas" path="res://Sprites/rocket.png" id="30_m514l"]
 
-[sub_resource type="Resource" id="Resource_5c1cw"]
-script = ExtResource("4_fy5k1")
-text = "Абыб"
-actor = "Antivirusman"
-metadata/_custom_type_script = "uid://buya54svgxw3"
+[sub_resource type="Animation" id="Animation_8j1ou"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("DiplomScene/Diplim:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(580, -236)]
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("DiplomScene/Diplim:skew")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("DiplomScene/Diplim:position:x")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(580, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("DiplomScene/Diplim:position:y")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-236, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
 
-[sub_resource type="Resource" id="Resource_akxrc"]
-script = ExtResource("4_fy5k1")
-text = "Шышы"
-actor = "Booka"
-metadata/_custom_type_script = "uid://buya54svgxw3"
+[sub_resource type="Animation" id="Animation_gu47o"]
+resource_name = "hide"
+length = 6.66667
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("DiplomScene/Diplim:skew")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, -1.20428, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(5.93, 6.5)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("DiplomScene/Diplim:position:x")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(608, -0.25, 0, 0.25, 0, 274, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(5.93, 6.5)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("DiplomScene/Diplim:position:y")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(211, -0.25, 0, 0.25, 0, -265, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(5.93, 6.5)
+}
 
-[sub_resource type="Resource" id="Resource_gu47o"]
-script = ExtResource("4_fy5k1")
-text = "Зедерегыаафукыф"
-actor = "Antivirusman"
-metadata/_custom_type_script = "uid://buya54svgxw3"
+[sub_resource type="Animation" id="Animation_17rhs"]
+resource_name = "Show"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("DiplomScene/Diplim:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.491667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(589, -201), Vector2(577, 300)]
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("DiplomScene/Diplim:skew")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(0.663225, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.491667)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_o3hm7"]
+_data = {
+&"RESET": SubResource("Animation_8j1ou"),
+&"hide": SubResource("Animation_gu47o"),
+&"show": SubResource("Animation_17rhs")
+}
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_xb05w"]
+blend_mode = 1
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_yjo7n"]
+particle_flag_disable_z = true
+emission_shape_offset = Vector3(1.03, 0, 0)
+emission_shape_scale = Vector3(1000, 1, 1)
+emission_shape = 3
+emission_box_extents = Vector3(1, 1, 1)
+velocity_pivot = Vector3(4.14, 0, 0)
+gravity = Vector3(0, 0, 0)
+linear_accel_min = 24.0
+linear_accel_max = 82.67
 
 [node name="Camera2D" type="Camera2D"]
 anchor_mode = 0
@@ -45,10 +179,6 @@ offset = Vector2(-0.00050354, 11.6668)
 script = ExtResource("14_8hm71")
 text = NodePath("Level Label")
 
-[node name="Scenario" type="Node" parent="DialogPopup"]
-script = ExtResource("15_223my")
-replics = Array[Object]([SubResource("Resource_5c1cw"), SubResource("Resource_akxrc"), SubResource("Resource_gu47o")])
-
 [node name="Level Label" type="RichTextLabel" parent="DialogPopup"]
 texture_filter = 1
 offset_left = -34.3333
@@ -59,7 +189,7 @@ scale = Vector2(0.333, 0.333)
 theme = ExtResource("14_gu47o")
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/normal_font_size = 24
-text = "Выбери папку в которую будут сохраняться скрипты"
+text = "A quick brown fox jumped over a lazy dog"
 horizontal_alignment = 1
 
 [node name="Sprite" type="Sprite2D" parent="DialogPopup" node_paths=PackedStringArray("dialog", "zoom")]
@@ -71,16 +201,18 @@ zoom = NodePath("../..")
 
 [node name="GameWorld" parent="." instance=ExtResource("1_xlvrw")]
 texture_filter = 2
-position = Vector2(521, 2228)
+position = Vector2(519, 2230)
 scale = Vector2(0.533445, 0.533445)
 
 [node name="UI" parent="." instance=ExtResource("8_5juve")]
 
 [node name="Booka" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(799, 110)
+position = Vector2(1251, 128)
 scale = Vector2(2.9375, 2.9375)
 texture = ExtResource("11_fy5k1")
+script = ExtResource("9_wncyr")
+Speed = 1.0
 
 [node name="SpeakerPos" type="Node2D" parent="Booka"]
 position = Vector2(-4.42553, 29.617)
@@ -92,7 +224,90 @@ texture_filter = 1
 position = Vector2(142, 591)
 scale = Vector2(3, 3)
 texture = ExtResource("12_5c1cw")
+script = ExtResource("12_akxrc")
+speed = 1.0
+directionChangeRate = 3.0
+bounds = Vector2(25, 1110)
 
 [node name="SpeakerPos" type="Node2D" parent="Antivirusman"]
 position = Vector2(19.6667, -33.3333)
 scale = Vector2(0.333333, 0.333333)
+
+[node name="CutsceneManager" type="Node" parent="." node_paths=PackedStringArray("camera", "booka", "ambulance", "diplom", "ash", "worm", "trivoga", "rocket")]
+script = ExtResource("11_5c1cw")
+camera = NodePath("..")
+booka = NodePath("../Booka")
+ambulance = NodePath("../Ambulance")
+Scenarios = Array[PackedScene]([ExtResource("12_gu47o"), ExtResource("13_gu47o"), ExtResource("14_17rhs"), ExtResource("15_1q4c1"), ExtResource("16_aobyt"), ExtResource("17_i6j5g"), ExtResource("18_g6g5t"), ExtResource("19_iss77"), ExtResource("20_xb05w"), ExtResource("21_wncyr")])
+diplom = NodePath("../DiplomScene")
+ash = NodePath("../Ash")
+worm = NodePath("../Worm")
+trivoga = NodePath("../Trivoga")
+rocket = NodePath("../GPUParticles2D")
+bigRocket = ExtResource("23_m514l")
+
+[node name="DiplomScene" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_o3hm7")
+}
+
+[node name="Diplim" parent="DiplomScene" instance=ExtResource("14_223my")]
+z_index = 5
+position = Vector2(580, -236)
+scale = Vector2(0.286991, 0.286991)
+
+[node name="Ambulance" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(1241, 152)
+scale = Vector2(3, 3)
+texture = ExtResource("23_i6j5g")
+script = ExtResource("9_wncyr")
+Speed = 5.0
+
+[node name="SpeakerPos" type="Node2D" parent="Ambulance"]
+position = Vector2(-0.999996, 41)
+scale = Vector2(0.111111, 0.111111)
+
+[node name="Worm" type="Sprite2D" parent="."]
+z_index = 1
+texture_filter = 1
+position = Vector2(572, 603)
+scale = Vector2(3, 3)
+texture = ExtResource("24_iss77")
+script = ExtResource("25_xb05w")
+
+[node name="SpeakerPos" type="Node2D" parent="Worm"]
+position = Vector2(5, -25.6667)
+scale = Vector2(0.111111, 0.111111)
+
+[node name="Rob" type="Sprite2D" parent="."]
+position = Vector2(882, 176)
+texture = ExtResource("24_g6g5t")
+
+[node name="SpeakerPos" type="Node2D" parent="Rob"]
+position = Vector2(37, -40)
+scale = Vector2(0.111111, 0.111111)
+
+[node name="Ash" type="Sprite2D" parent="."]
+visible = false
+z_index = 110
+material = SubResource("CanvasItemMaterial_xb05w")
+position = Vector2(701.5, 360.25)
+scale = Vector2(1.435, 1.4604)
+texture = ExtResource("26_iss77")
+
+[node name="Trivoga" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(792, 28)
+stream = ExtResource("29_pou65")
+attenuation = 0.00837322
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="."]
+visible = false
+z_index = -3
+position = Vector2(585, 249)
+sub_emitter = NodePath(".")
+texture = ExtResource("30_m514l")
+lifetime = 8.87
+speed_scale = 8.88
+randomness = 0.39
+process_material = SubResource("ParticleProcessMaterial_yjo7n")

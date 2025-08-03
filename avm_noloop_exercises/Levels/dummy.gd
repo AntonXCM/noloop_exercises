@@ -1,5 +1,5 @@
 extends Node
 
 func solution():
-	# TODO Write here solution
+	# TODO Optimize the script
 	pass

@@ -12,8 +12,13 @@ public partial class Level : Button
     [Export] private string levelCodePath, userCodePath;
     [Export] private Color badColor, okColor, goodColor;
     [Export] private FileDialog fileDialog;
+    [Export] private Button nextLevel;
+    private float currentLevelPerformance = 0;
     private TestedScript levelScript, userScript;
     public static Level Instance;
+
+    public event Action<int> OnLevelLoad;
+
     public string LevelCodePath
     {
         get => levelScript.path;
@@ -31,6 +36,7 @@ public partial class Level : Button
         RequestFolder();
         FramerateManager.FPS = 5;
         Instance = this;
+        nextLevel.Pressed += () => LoadLevel(index + 1);
     }
     public void RequestFolder()
     {
@@ -46,6 +52,8 @@ public partial class Level : Button
     }
     public void LoadLevel(int index)
     {
+        FramerateManager.FPS += (int)Mathf.Round(currentLevelPerformance / 3);
+        currentLevelPerformance = 0;
         string
             actualLevelCodePath = string.Concat(levelCodePath, index, ".gd"),
             actualUserCodePath = string.Concat(userCodePath, index, ".gd");
@@ -64,22 +72,29 @@ public partial class Level : Button
             userScript.RegenerateFrom(actualUserCodePath);
         }
         GenerateUI();
+        this.index = index;
+        // nextLevel.Disabled = true;
+        OnLevelLoad?.Invoke(index);
     }
     public override void _Pressed()
     {
-        FramerateManager.FPS ++;
         userScript.text = userCode.Code;
         userScript.SaveCompile();
 
-        Godot.Collections.Array input = levelScript.scriptInstance.Get("ARGS").AsGodotArray();
+        Godot.Collections.Array input = levelScript.scriptInstance.Call("get_args").AsGodotArray();
         LevelRequirements requirements = new(levelScript.scriptInstance);
-        
+
         var levelResults = levelScript.Test(input);
         var userResults = userScript.Test(input);
 
         levelCode.Results = levelResults.ToString();
         userCode.Results = userResults.ToStringCompareWith(levelResults, requirements);
-        LoadLevel(2);
+        float score = userResults.CompareWith(levelResults, requirements);
+        if (score > 0)
+        {
+            nextLevel.Disabled = false;
+            currentLevelPerformance = Math.Max(currentLevelPerformance, score);
+        }
     }
     private void GenerateUI()
     {

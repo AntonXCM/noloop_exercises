@@ -1,6 +1,8 @@
 extends Node
 
-var ARGS : Array = [1000000]
+func get_args() -> Array:
+	return [randi_range(900000, 1111111)]
+	
 var DESCRIPTION : String = "Sum of numbers from 1 to n"
 var REQUIRE_MS : int = 50;
 var REQUIRE_LINES : int = 1;
