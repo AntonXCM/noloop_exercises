@@ -4,6 +4,10 @@ using System;
 public partial class Worm : Sprite2D
 {
     public bool Hiding = true;
+    public override void _Ready()
+    {
+        Scale = Scale with { Y = 0 };
+    }
 
     public override void _Process(double delta)
     {

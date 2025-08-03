@@ -166,7 +166,7 @@ linear_accel_max = 82.67
 
 [node name="Camera2D" type="Camera2D"]
 anchor_mode = 0
-zoom = Vector2(0.84, 0.84)
+zoom = Vector2(1.68, 1.68)
 editor_draw_limits = true
 
 [node name="DialogPopup" type="Sprite2D" parent="." node_paths=PackedStringArray("text")]
@@ -283,6 +283,7 @@ scale = Vector2(0.111111, 0.111111)
 [node name="Rob" type="Sprite2D" parent="."]
 position = Vector2(882, 176)
 texture = ExtResource("24_g6g5t")
+script = ExtResource("25_xb05w")
 
 [node name="SpeakerPos" type="Node2D" parent="Rob"]
 position = Vector2(37, -40)

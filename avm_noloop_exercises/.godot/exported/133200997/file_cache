@@ -1,0 +1,22 @@
+res://Fonts/AlegreyaTheme.tres::46b2ced121220b603af89509eca9505c::1754114762::res://.godot/exported/133200997/export-61530129e85d36e7f74932747d15948a-AlegreyaTheme.res
+res://Fonts/CodeTheme.tres::cb80ed9830539583f45e7fa58e34125d::1754114769::res://.godot/exported/133200997/export-1c25eedf9720c8335c75467c8880138b-CodeTheme.res
+res://Fonts/FiraCodeLight.tres::99097c3f97a9d151aad3dddda82f7173::1754114754::res://.godot/exported/133200997/export-44cb9cf37502de0f2865891b4cd8ec17-FiraCodeLight.res
+res://Fonts/Pixel.tres::48a565574ed2cfc7726a20830f12e971::1754114750::res://.godot/exported/133200997/export-4b6f02a934340ae52845474cfdba416f-Pixel.res
+res://GameScenes/borshevik.tscn::2c10cd15c9d09175b82306706280e74b::1754123670::res://.godot/exported/133200997/export-52c01d1ec701347cc05b5989846a13e0-borshevik.scn
+res://GameScenes/LikeGame.tscn::db5dcd3949a310fe4921a741dca3553a::1754220514::res://.godot/exported/133200997/export-94ead76303922ae9770c255db44944ae-LikeGame.scn
+res://GameScenes/shahed.tscn::752fa3ee82ebacc0b8ef20a7c4f762e3::1754219275::res://.godot/exported/133200997/export-3d70fa00d25549b01e104a7d5977da64-shahed.scn
+res://Scenarios/Basic.tscn::80fed105f6c6810b1d8430bfcfd803b1::1754123670::res://.godot/exported/133200997/export-91834d2cfcc271e635ff7f40ac22d1ac-Basic.scn
+res://Scenarios/diplim.tscn::174df52506f9a50e7dcfd5dca3888946::1754216738::res://.godot/exported/133200997/export-f603fc851e1b96fd5bdfba15dc0215a0-diplim.scn
+res://Scenarios/Level1.tscn::15d65f077c1bd3e0f590cbc5b81ce1b0::1754138971::res://.godot/exported/133200997/export-329bde0a1bf1c2c18a493546a61bb227-Level1.scn
+res://Scenarios/Level2.tscn::5697f59373967bc83fa60a077394eee9::1754138971::res://.godot/exported/133200997/export-507d32a8bdb9dfa0aaab9ec864cc8eea-Level2.scn
+res://Scenarios/Level3.tscn::9a34b185086015b96d80854a0a24a40a::1754206011::res://.godot/exported/133200997/export-294160dc95ae9b6e667644f9183712c8-Level3.scn
+res://Scenarios/Level4.tscn::62da28014417af67d40191e967cae6c6::1754220514::res://.godot/exported/133200997/export-2d7b80be8257127d8ead9fa8f1b154b3-Level4.scn
+res://Scenarios/Level5.tscn::7ddb5f732378c39606127926763d7081::1754209541::res://.godot/exported/133200997/export-3266f70db308045d239b1ed5db9620cf-Level5.scn
+res://Scenarios/Level6.tscn::c3e6eb121861fbe882d225c77daabc36::1754216818::res://.godot/exported/133200997/export-e3adb9b0e27a08cf224352fb6e7bcf65-Level6.scn
+res://Scenarios/Level7.tscn::7228969b94eaf1d1f28253f49b83a470::1754209541::res://.godot/exported/133200997/export-3e5669e04a168db7e32a384a7c281688-Level7.scn
+res://Scenarios/Level8.tscn::7cfb2b43b7b68f239666cfe0c58619b4::1754209540::res://.godot/exported/133200997/export-f78600c0359548f05276732ff1accf0f-Level8.scn
+res://Scenarios/Level9.tscn::507feded339c2541a5df2142ee2f5c60::1754208068::res://.godot/exported/133200997/export-4dd1a70bbded4fc3ce2ccbbe390c2491-Level9.scn
+res://Scenarios/SaveFolder.tscn::8dcfb7918b19b36187f962ec7474d048::1754220514::res://.godot/exported/133200997/export-0e42b85c1efacba9c3abcc46e5f7da24-SaveFolder.scn
+res://UI/code Column.tscn::706b85c79d60cd9de12ff97f67c09215::1754215932::res://.godot/exported/133200997/export-a7671d4b39aeb4a628a1b0ca5c92e3d2-code Column.scn
+res://UI/ui.tscn::b4dae974b9da33fe17a5b4b95a6ddb62::1754220514::res://.godot/exported/133200997/export-ab418935c2d2d9c123b4df008070945e-ui.scn
+res://scene.tscn::1f6c68f241225b5c3e382e586a830227::1754221457::res://.godot/exported/133200997/export-78c237d4bfdb4e1d02e0b5f38ddfd8bd-scene.scn

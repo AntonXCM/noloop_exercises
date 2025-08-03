@@ -9,7 +9,7 @@ public partial class CutsceneManager : Node
     [Export] private PackedScene[] Scenarios;
     [Export] private AnimationPlayer diplom;
     [Export] private Node2D ash;
-    [Export] private Worm worm;
+    [Export] private Worm worm, rob;
     [Export] private AudioStreamPlayer2D trivoga;
     [Export] private GpuParticles2D rocket;
     [Export] private PackedScene bigRocket;
@@ -31,6 +31,7 @@ public partial class CutsceneManager : Node
     {
         if (level == 3) booka.Speed = bookaSpeed;
         if (level == 4) booka.Speed *= -2;
+        if (level == 5) rob.Hiding = false;
         if (level == 6) trivoga.Play();
         if (level == 8) worm.Hiding = false;
         if (level == 9) ash.Visible = true;
@@ -47,6 +48,8 @@ public partial class CutsceneManager : Node
             scenario.replics.Last().OnShow += () => diplom.Play("show");
             scenario.replics.Last().OnEnd += () => diplom.Play("hide");
         }
+        if (level is 5)
+            scenario.replics.Last().OnEnd += () => rob.Hiding = true;
         if (level is 6)
         {
             scenario.replics.Last().OnShow += () => ambulance.Speed = ambulanceSpeed;
@@ -57,7 +60,7 @@ public partial class CutsceneManager : Node
             {
                 Node2D rocket = bigRocket.Instantiate() as Node2D;
                 GetParent().AddChild(rocket);
-                rocket.Position = new Vector2(480, 550);
+                rocket.Position = new Vector2(480, 550); //Yeah hardcode!
             };
         scenario.Start();
     }
